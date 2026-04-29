@@ -5,34 +5,34 @@ Channel: "Microsoft-Windows-Ntfs/Operational"
 Provider: "Microsoft-Windows-Ntfs"
 
 Maps:
--
-Property: PayloadData1
-PropertyValue: "DevicePath: %DeviceName%"
-Values:
--
-Name: DeviceName
-Value: "/Event/EventData/Data[@Name=\"DeviceName\"]"
--
-Property: PayloadData2
-PropertyValue: "CorrelationId: %VolumeCorrelationId%"
-Values:
--
-Name: VolumeCorrelationId
-Value: "/Event/EventData/Data[@Name=\"VolumeCorrelationId\"]"
--
-Property: PayloadData3
-PropertyValue: "IsBootVolume: %IsBootVolume%"
-Values:
--
-Name: IsBootVolume
-Value: "/Event/EventData/Data[@Name=\"IsBootVolume\"]"
--
-Property: PayloadData4
-PropertyValue: "MountDuration: %MountDuration%"
-Values:
--
-Name: MountDuration
-Value: "/Event/EventData/Data[@Name=\"MountDuration\"]"
+  -
+    Property: PayloadData1
+    PropertyValue: "DevicePath: %DeviceName%"
+    Values:
+      -
+        Name: DeviceName
+        Value: "/Event/EventData/Data[@Name=\"DeviceName\"]"
+  -
+    Property: PayloadData2
+    PropertyValue: "CorrelationId: %VolumeCorrelationId%"
+    Values:
+      -
+        Name: VolumeCorrelationId
+        Value: "/Event/EventData/Data[@Name=\"VolumeCorrelationId\"]"
+  -
+    Property: PayloadData3
+    PropertyValue: "IsBootVolume: %IsBootVolume%"
+    Values:
+      -
+        Name: IsBootVolume
+        Value: "/Event/EventData/Data[@Name=\"IsBootVolume\"]"
+  -
+    Property: PayloadData4
+    PropertyValue: "MountDuration: %MountDuration%"
+    Values:
+      -
+        Name: MountDuration
+        Value: "/Event/EventData/Data[@Name=\"MountDuration\"]"
 
 # Documentation
 # https://vikas891.github.io/posts/secrets-and-shadows/
