@@ -5,34 +5,34 @@ Channel: "Microsoft-Windows-Ntfs/Operational"
 Provider: "Microsoft-Windows-Ntfs"
 
 Maps:
--
-Property: PayloadData1
-PropertyValue: "DevicePath: %DeviceName%"
-Values:
--
-Name: DeviceName
-Value: "/Event/EventData/Data[@Name=\"DeviceName\"]"
--
-Property: PayloadData2
-PropertyValue: "CorrelationId: %VolumeCorrelationId%"
-Values:
--
-Name: VolumeCorrelationId
-Value: "/Event/EventData/Data[@Name=\"VolumeCorrelationId\"]"
--
-Property: PayloadData3
-PropertyValue: "VolumeSize: %LongestRunCachedStr%"
-Values:
--
-Name: LongestRunCachedStr
-Value: "/Event/EventData/Data[@Name=\"LongestRunCachedStr\"]"
--
-Property: PayloadData4
-PropertyValue: "MediaType: %MediaType% (1=Fixed)"
-Values:
--
-Name: MediaType
-Value: "/Event/EventData/Data[@Name=\"MediaType\"]"
+  -
+    Property: PayloadData1
+    PropertyValue: "DevicePath: %DeviceName%"
+    Values:
+      -
+        Name: DeviceName
+        Value: "/Event/EventData/Data[@Name=\"DeviceName\"]"
+  -
+    Property: PayloadData2
+    PropertyValue: "CorrelationId: %VolumeCorrelationId%"
+    Values:
+      -
+        Name: VolumeCorrelationId
+        Value: "/Event/EventData/Data[@Name=\"VolumeCorrelationId\"]"
+  -
+    Property: PayloadData3
+    PropertyValue: "VolumeSize: %LongestRunCachedStr%"
+    Values:
+      -
+        Name: LongestRunCachedStr
+        Value: "/Event/EventData/Data[@Name=\"LongestRunCachedStr\"]"
+  -
+    Property: PayloadData4
+    PropertyValue: "MediaType: %MediaType% (1=Fixed)"
+    Values:
+      -
+        Name: MediaType
+        Value: "/Event/EventData/Data[@Name=\"MediaType\"]"
 
 # Documentation
 # https://vikas891.github.io/posts/secrets-and-shadows/
